@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h1>Add item</h1>
+        <form method="POST" action="/">
+            <input type="text" name="title">
+            <input type="submit" value="Add">
+        </form>
+
+        <h2>Items</h2>
+        {% for item in items %}
+            <p>{{ item.title }}</p>
+        {% endfor %}
+    </body>
+</html>
